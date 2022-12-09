@@ -15,8 +15,8 @@ T = (0, 0)
 visited = set()
 visited.add(T)
 for row in rows:
-    direction, n = row.split()
-    for _ in range(int(n)):
+    direction, n_moves = row.split()
+    for _ in range(int(n_moves)):
         if direction == 'U':
             H = (H[0], H[1] + 1)
         elif direction == 'R':
@@ -36,8 +36,8 @@ K = [(0, 0)]*10
 visited = set()
 visited.add(K[9])
 for row in rows:
-    direction, n = row.split()
-    for _ in range(int(n)):
+    direction, n_moves = row.split()
+    for _ in range(int(n_moves)):
         if direction == 'U':
             K[0] = (K[0][0], K[0][1] + 1)
         elif direction == 'R':
