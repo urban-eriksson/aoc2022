@@ -3,13 +3,11 @@ def get_distance(H, T):
 
 
 def update_tail_position(H, T):
-    T = T[0] + min(max(H[0]-T[0], -1), 1), T[1] + min(max(H[1]-T[1], -1), 1)
-    return T
+    return T[0] + min(max(H[0]-T[0], -1), 1), T[1] + min(max(H[1]-T[1], -1), 1)
 
 
 with open('data09.txt') as f:
     input = f.read()
-
 rows = input.split('\n')
 
 H = (0, 0)
